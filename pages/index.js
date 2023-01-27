@@ -4,6 +4,8 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import CompaniesLogo from '../components/companieslogo'
+import Socials from '../components/socials'
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,13 +13,20 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+      <section className={`${utilStyles.headingMd} ${utilStyles.textAlignCenter}`}>
         <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Hello there 👋! I'm a node.js software engineer from Mexico 🇲🇽.
+          I make and paint web components to build 
+          accesible apps with HTML 🖼, CSS 🎨 and JS 🖌.
+          Some of the companies I've worked making node.js apps.
         </p>
+        <CompaniesLogo />
+        <p>
+          If you want to reach me this are my socials
+        </p>
+        <Socials />
       </section>
+      {/* TODO: make this section a component */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

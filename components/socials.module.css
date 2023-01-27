@@ -1,0 +1,10 @@
+.socialsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoWrap {
+    height: 50px;
+    width: 50px ;
+}
