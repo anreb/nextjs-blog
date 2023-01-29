@@ -1,5 +1,5 @@
 import Script from 'next/script'
-import Header from './header.js'
+import Header from './home/header'
 
 import styles from './layout.module.css'
 import Link from 'next/link'
@@ -7,6 +7,11 @@ import Link from 'next/link'
 export const siteTitle = 'Bernardo Lopez'
 
 export default function Layout({ children, home }) {
+  const backToHome = !home && (
+    <div className={styles.backToHome}>
+      <Link href="/">← Back to home</Link>
+    </div>
+  )
   return (
     <div className={styles.container}>
       <Script
@@ -18,11 +23,7 @@ export default function Layout({ children, home }) {
       />
       <Header home/>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
+      {backToHome}
     </div>
   )
 }

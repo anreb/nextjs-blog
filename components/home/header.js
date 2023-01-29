@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../../styles/utils.module.css'
 import styles from './header.module.css'
 
 export default function Header({children, home}) {

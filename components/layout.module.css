@@ -1,7 +1,6 @@
 /* ----------- Mobile ----------- */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
+@media (min-device-width: 320px) 
   and (max-device-width: 425px) { 
     .container {
       max-width: 22rem;
@@ -15,16 +14,14 @@
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
+@media (min-device-width: 320px) 
   and (max-device-width: 425px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
+@media (min-device-width: 320px) 
   and (max-device-width: 425px) 
   and (orientation: landscape) { 
 
@@ -32,9 +29,7 @@
 
 /* ----------- Laptop and Desktop ----------- */
 /* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+@media (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     .container {
       max-width: 39rem;
@@ -48,8 +43,7 @@
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
+@media (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
@@ -66,8 +60,7 @@
 
 /* ----------- Laptop and Desktop ----------- */
 /* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1024px) 
+@media (min-device-width: 1024px) 
   and (max-device-width: 1200px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     .container {
@@ -82,8 +75,7 @@
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1024px) 
+@media (min-device-width: 1024px) 
   and (max-device-width: 1200px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
@@ -101,8 +93,7 @@
 /* ----------- Tablet ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
+@media (min-device-width: 768px) 
   and (max-device-width: 1023px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     .container {
@@ -117,8 +108,7 @@
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
+@media (min-device-width: 768px) 
   and (max-device-width: 1023px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -126,8 +116,7 @@
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
+@media (min-device-width: 768px) 
   and (max-device-width: 1023px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {

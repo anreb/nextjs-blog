@@ -1,5 +1,5 @@
 import styles from './companieslogo.module.css'
-import { kavaklogo, disneylogo, bestowlogo, ironhacklogo } from '../public/companies'
+import { kavaklogo, disneylogo, bestowlogo, ironhacklogo } from '../../public/companies'
 
 export default function CompaniesLogo() {
     return (

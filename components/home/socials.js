@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {linkedinlogo, githublogo} from '../public/companies'
+import {linkedinlogo, githublogo} from '../../public/companies'
 import styles from './socials.module.css'
 
 export default function Socials() {
